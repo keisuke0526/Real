@@ -1,0 +1,26 @@
+version: '3'
+services:
+ db:
+   image: mysql:5.6.49
+   environment:
+     MYSQL_ROOT_PASSWORD: password
+     MYSQL_DATABASE: root
+   ports:
+     - "6306:3306"
+   volumes:
+     - ./db/mysql/volumes:/var/lib/mysql
+ web:
+   build: .
+   command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+   volumes:
+     - .:/real
+     - gem_data:/usr/local/bundle
+   ports:
+     - "3000:3000"
+   depends_on:
+     - db
+   tty: true
+   stdin_open: true
+
+volumes:
+ gem_data:
