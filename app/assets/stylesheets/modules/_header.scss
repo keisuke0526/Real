@@ -1,0 +1,27 @@
+.header {
+  height: 150px;
+  &__upper {
+    height: 30px;
+    background-color: #8c6450;
+  }
+  &__lower {
+    height: 120px;
+    display: flex;
+    .container {
+      width: 100%;
+      &__link {
+        font-size: 60px;
+        text-decoration: none;
+        line-height: 60px;
+        text-align:center;
+        color: white;
+        &__btn {
+
+        }
+        &__logo {
+          margin:0 auto;
+        }
+      }
+    }
+  }
+}
