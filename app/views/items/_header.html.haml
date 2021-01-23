@@ -4,6 +4,12 @@
   .header__lower
     .container
       .container__link
-        -# = link_to root_path, class: 'container__link__btn' do
-        -#   = icon('fas', 'edit')
+        .container__link__btn
+          = link_to root_path, class: 'container__link__btn--categories' do
+            %i
+            = icon('fas', 'align-justify fa-xs')
+
+          = link_to root_path, class: 'container__link__btn--cog' do
+            %i
+            = icon('fas', 'cog fa-xs')
         =image_tag("logo/real_logo.png",size: "250x90", alt:"Real-logo", class: "container__link__logo")
