@@ -1,41 +1,51 @@
 .header {
-  height: 150px;
+  height: 110px;
   &__upper {
-    height: 30px;
-    background-color: #8c6450;
-  }
-  &__lower {
-    height: 90px;
+    height: 80px;
     display: flex;
     .container {
       width: 100%;
       &__link {
+        height: 80px;
         font-size: 60px;
         text-decoration: none;
-        line-height: 60px;
         text-align:center;
         color: white;
         position: relative;
-        &__btn {
-          &--categories {
+          &__categories {
             position: absolute;
             top: 5px;
-            left: 30px;
-            color: #8c6450;
+            left: 150px;
+            color: #e6c7b8;
+            font-size: 40px;
           }
-          &--cog {
+          &__face {
             position: absolute;
-            top: 5px;
-            right: 30px;
-            font-size: 30px;
-            color: gray;
+            right: 150px;
+
           }
-        }
         &__logo {
-          display: block;
+          line-height: 80px;
           margin-top: 10px;
           margin:0 auto;
         }
+      }
+    }
+  }
+  &__lower {
+    height: 30px;
+    background-color: #e6c7b8;
+    .lower-nav {
+      height: 30px;
+      position: relative;
+      &__post {
+        height: 30px;
+        line-height : 30px;
+        position: absolute;
+        left: 400px;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
       }
     }
   }

@@ -1,15 +1,17 @@
 .header
   .header__upper
-
-  .header__lower
     .container
       .container__link
-        .container__link__btn
-          = link_to root_path, class: 'container__link__btn--categories' do
-            %i
-            = icon('fas', 'align-justify fa-xs')
+        = link_to root_path, class: 'container__link__categories' do
+          -# カテゴリーから選ぶ
+          %i
+          -# = icon('fas', 'angle-down fa-xs')
+          = icon('fas', 'align-justify fa-xs')
 
-          = link_to root_path, class: 'container__link__btn--cog' do
-            %i
-            = icon('fas', 'cog fa-xs')
-        =image_tag("logo/real_logo.png",size: "250x90", alt:"Real-logo", class: "container__link__logo")
+        = link_to root_path, class: 'container__link__face' do
+          =image_tag("logo/ei-smiling_face.png",size: "50x50", alt:"face")
+        =image_tag("logo/real.png",size: "80x50", alt:"Real-logo", class: "container__link__logo")
+  .header__lower
+    .lower-nav
+      = link_to root_path, class: 'lower-nav__post' do
+        投稿する
