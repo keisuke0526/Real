@@ -3,8 +3,8 @@ $(document).on('turbolinks:load', () => {
     var $body = $('body');
     var $btn = $('.toggle_btn');
     var $mask = $('#mask');
-    var open = 'open'; // class
-    // menu open close
+    var open = 'open';
+
     $btn.on('click', function () {
       if (!$body.hasClass(open)) {
         $body.addClass(open);
@@ -12,7 +12,7 @@ $(document).on('turbolinks:load', () => {
         $body.removeClass(open);
       }
     });
-    // mask close
+
     $mask.on('click', function () {
       $body.removeClass(open);
     });
