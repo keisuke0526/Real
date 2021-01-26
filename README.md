@@ -3,16 +3,11 @@
 |------|----|-------|
 |title|string|null: false|
 |item_explanation|text|null: false|
+|image|string|null: false|
 
 ### Association
 - has_many :item_imgs, dependent: :destroy
 
-
-## item_imgsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|image|string|null: false|
-|item_id|references|null: false, foreign_key: true|
 
 ### Association
 -  belongs_to :item
