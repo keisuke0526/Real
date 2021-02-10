@@ -1,5 +1,7 @@
 <main>
   <% @items.each do |item|%>
-  <%= render partial: "item", locals:{item: item}%>
+  <div class="contents">
+    <%= image_tag(item.image.url) %>
+  </div>
   <% end %>
 </main>
