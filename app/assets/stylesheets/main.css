@@ -11,6 +11,7 @@
   display: flex;
 }
 
-.contents img{
+.image {
+  display: inline-block;
   margin-left: 30px;
 }
