@@ -1,0 +1,13 @@
+.footer {
+  height: 30px;
+  width: 100%;
+  box-shadow: 0 0 4px gray;
+  position: absolute;
+  bottom: 0;
+}
+.footer p{
+  text-align : center;
+  line-height: 30px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,8 @@
+.main {
+  height: calc(100vh - 70px - 30px);
+  width: 80%;
+  overflow: auto;
+  letter-spacing: 0.1em;
+  margin:0 auto;
+  font-family: 'Open Sans', sans-serif;
+}

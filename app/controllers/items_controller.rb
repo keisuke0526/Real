@@ -5,10 +5,17 @@ class ItemsController < ApplicationController
   end
 
   def new
+    @item = Item.new
+  end
+
+  def create
+    @item = Item.new(item_params)
+    @item.save
+    redirect_to root_path
   end
 
   private
- def post_params
-  params.require(:post).permit(:title, :image, :text, :item_explanation)
- end
+  def item_params
+    params.require(:item).permit(:title, :image, :item_explanation)
+  end
 end
