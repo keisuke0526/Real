@@ -1,15 +1,28 @@
-/*============
-header
-=============*/
 .header {
-height: 70px;
-text-align: center;
-box-shadow: 0 0 4px gray;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 4px gray;
+  background-color: white;
+  position: relative;
 }
+
+#nav-area {
+  height:50px;
+  background-color: #D0DBE2;
+  color: white;
+}
+
+.nav-info {
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+}
+
 .header-user {
 	color: gray;
 	font-size: 30px;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 150px;
   width: 30px;
@@ -19,7 +32,7 @@ box-shadow: 0 0 4px gray;
 .header .header-heart {
 	color: gray;
 	font-size: 30px;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 200px;
   width: 30px;
@@ -30,7 +43,7 @@ box-shadow: 0 0 4px gray;
 	color: gray;
 	line-height: 70px;
 	font-size: 20px;
-	position: fixed;
+  position: absolute;
   top: 30px;
   left: 200px;
   width: 30px;
@@ -38,9 +51,9 @@ box-shadow: 0 0 4px gray;
 }
 
 .header img {
-
   height: 65px;
   width: 190px;
+  margin-top: 5px;
 }
 
 /*============
@@ -48,7 +61,7 @@ nav
 =============*/
 nav {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -300px;
   bottom: 0;
@@ -101,7 +114,7 @@ nav .inner ul li a:hover {
 =============*/
 .toggle_btn {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 150px;
   width: 30px;
@@ -177,12 +190,6 @@ nav .inner ul li a:hover {
 /*============
 main
 =============*/
-main {
-	height: 100vh;
-  width: 100%;
-  padding: 50px 0;
-  transition: all .5s;
-}
 .open main {
   margin-left: 300px;
 }
@@ -190,12 +197,4 @@ main h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
-}
-/*============
-body
-=============*/
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  overflow: hidden;
 }

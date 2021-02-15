@@ -1,9 +1,9 @@
-<main>
-  <% @items.each do |item|%>
+<div class="main">
   <div class="contents">
-  <!-- image_tagにクラス与えるべき？画像を横に並ばせたい。tableでも良さそう。-->
-    <%= image_tag item.image.url, class: 'image' %>
-
+    <% @items.each do |item|%>
+      <div class="contents-image">
+        <%= image_tag item.image.url, class: 'image', size: '300x300' %>
+      </div>
+    <% end %>
   </div>
-  <% end %>
-</main>
+</div>

@@ -1,7 +1,22 @@
 <%= render "header" %>
-<%= form_with model: @item, class: :form, local: true do |form|%>
-  <%= form.text_field :title %>
-  <%= form.file_field :image %>
-  <%= form.text_area :item_explanation %>
-  <%= form.submit '投稿する' %>
-<% end %>
+<div class="container">
+  <%= form_with model: @item, class: :form, local: true do |form|%>
+    <div class="title-form">
+      <p>タイトルを追加する</p>
+      <%= form.text_field :title, class: 'title' %>
+    </div>
+    <div class="image-form">
+      <p>写真をアップロードする</p>
+      <%= form.file_field :image, class: 'image' %>
+    </div>
+    <div class="ex-form">
+      <p>レビューを追加する</p>
+      <%= form.text_area :item_explanation, class: 'ex' %>
+    </div>
+    <div class="action">
+      <%= form.submit '投稿する', class: 'btn' %>
+    </div>
+
+  <% end %>
+</div>
+<%= render "footer" %>

@@ -1,13 +1,54 @@
 .footer {
-  height: 30px;
+  height: 200px;
   width: 100%;
-  box-shadow: 0 0 4px gray;
-  position: absolute;
-  bottom: 0;
+  background-color: #D0DBE2;
 }
-.footer p{
-  text-align : center;
-  line-height: 30px;
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+
+.footer-sns {
+  height: 120px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: solid 1px white;
+}
+
+.sns-text {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.sns-icon {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.fa-twitter-square  {
+  color: white;
+  font-size: 60px;
+  margin-right: 10px;
+}
+
+.fa-instagram {
+  color: white;
+  font-size: 60px;
+  font-size: 60px;
+}
+
+.footer-list {
+  height: 80px;
+  width: 100%;
+}
+
+.footer-list ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.footer-list li {
+  margin-right: 40px;
+}
+.footer-list a {
+  text-decoration: none;
+  color: white;
 }

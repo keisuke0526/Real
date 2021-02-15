@@ -1,0 +1,64 @@
+.container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title-form {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+
+.title-form p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.title {
+  padding: 5px 30px;
+}
+
+.image-form {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+
+.image-form p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.image {
+  padding: 5px 30px;
+}
+
+.ex-form {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+
+.ex-form p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.ex {
+  padding: 5px 30px;
+}
+
+.action {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+
+.action .btn {
+  padding: 5px 30px;
+}
