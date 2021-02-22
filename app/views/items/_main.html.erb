@@ -1,9 +1,7 @@
 <div class="main">
   <div class="contents">
-    <% @items.each do |item|%>
-      <div class="contents-image">
-        <%= image_tag item.image.url, class: 'image', size: '300x300' %>
-      </div>
+    <% @items.each do |item| %>
+      <div class="contents-image" style="background-image: url(<%= item.image %>);"></div>
     <% end %>
   </div>
 </div>
