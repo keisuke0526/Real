@@ -1,0 +1,18 @@
+<!--
+indexにある"もっとみる"の遷移先
+-->
+
+<div class="wrapper">
+<%= render "header" %>
+
+<div class="main">
+  <div class="contents">
+    <% @items.each do |item| %>
+      <div class="contents-image" style="background-image: url(<%= item.image %>);"></div>
+    <% end %>
+  </div>
+  <%= will_paginate @item %>
+</div>
+
+<%= render "footer" %>
+</div>

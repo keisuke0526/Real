@@ -1,6 +1,6 @@
 $(document).on('turbolinks:load', () => {
   (function ($) {
-    var $body = $('body');
+    var $body = $('#nav-area');
     var $btn = $('.toggle_btn');
     var $mask = $('#mask');
     var open = 'open';

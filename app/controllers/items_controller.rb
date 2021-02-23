@@ -1,7 +1,11 @@
 class ItemsController < ApplicationController
 
   def index
-    @items = Item.all
+    @items = Item.all.order('created_at DESC').limit(8)
+  end
+
+  def indexInner
+    @items = Item.paginate(page: params[:page], per_page: 16).order('created_at DESC')
   end
 
   def new

@@ -1,7 +1,11 @@
 <div class="main">
-  <div class="contents">
+  <div class="contents-parts">
     <% @items.each do |item| %>
       <div class="contents-image" style="background-image: url(<%= item.image %>);"></div>
     <% end %>
+
+  </div>
+  <div class="more">
+    <%= link_to "もっとみる", indexInner_items_path, class: "btn-stitch" %>
   </div>
 </div>
