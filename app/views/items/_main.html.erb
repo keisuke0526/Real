@@ -1,7 +1,7 @@
 <div class="main">
   <div class="contents-parts">
     <% @items.each do |item| %>
-      <div class="contents-image" style="background-image: url(<%= item.image %>);"></div>
+      <%= link_to (image_tag "#{item.image}"), item_path(item.id), class: "content-image" %>
     <% end %>
 
   </div>

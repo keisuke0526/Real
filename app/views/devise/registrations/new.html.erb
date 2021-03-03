@@ -1,0 +1,40 @@
+<%# <h2>Sign up</h2> %>
+
+<div class="wrapper">
+  <%= render "items/header" %>
+  <div class="registration-container">
+    <div class="registration-inner">
+      <div class="registration-form">
+        <h1>登録して口コミを投稿しよう</h1>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div class="field">
+            <%= f.text_field :nickname, autofocus: true, autocomplete: "nickname", placeholder: "ニックネーム" %>
+          </div>
+
+          <div class="field">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "メールアドレス" %>
+          </div>
+
+          <div class="field">
+            <%= f.password_field :password, autocomplete: "new-password", placeholder: "パスワード" %>
+          </div>
+
+          <div class="field">
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "パスワード(確認)" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "登録する", class: "down-btn" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="login-change">
+        <h2>アカウントをお持ちですか？</h2>
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+  <%= render "items/footer" %>
+</div>

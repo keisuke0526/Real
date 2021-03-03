@@ -1,0 +1,18 @@
+<%= render "header" %>
+<div class="container">
+  <%= form_with model: @item, class: :form, local: true do |form|%>
+    <div class="title-form">
+      <p>タイトル</p>
+      <%= form.text_field :title, class: 'title' %>
+    </div>
+    <div class="ex-form">
+      <p>レビュー</p>
+      <%= form.text_area :item_explanation, class: 'ex' %>
+    </div>
+    <div class="action">
+      <%= form.submit '更新する', class: 'btn' %>
+    </div>
+
+  <% end %>
+</div>
+<%= render "footer" %>

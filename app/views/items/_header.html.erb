@@ -5,13 +5,16 @@
   <span class="header-search"><i class="fas fa-search"></i></span>
 </div>
   <div id="nav-area">
-    <h1 class="nav-info">本当のことを知り、後悔しないインテリア選択サービスを。</h1>
+    <h1 class="nav-info">本当のことを知り、後悔しないインテリア選択を。</h1>
     <nav>
       <div class="inner">
         <ul>
           <li><%= link_to "カテゴリーから探す", root_path %></li>
           <li><%= link_to "新規投稿", new_item_path %></li>
-          <li><%= link_to "ログイン", root_path %></li>
+          <li><%= link_to "アカウントの作成", new_user_registration_path %></li>
+          <%# 下記、APIログイン実装時に使用 %>
+          <%# <li><%= link_to "アカウントの作成", registrationSelection_items_path %></li>
+          <li><%= link_to "ログイン", new_user_session_path %></li>
           <li><%= link_to "マイページ", root_path %></li>
           <li><%= link_to "トップに戻る", root_path %></li>
         </ul>

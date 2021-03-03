@@ -3,16 +3,16 @@ indexにある"もっとみる"の遷移先
 -->
 
 <div class="wrapper">
-<%= render "header" %>
+  <%= render "header" %>
 
-<div class="main">
-  <div class="contents">
-    <% @items.each do |item| %>
-      <div class="contents-image" style="background-image: url(<%= item.image %>);"></div>
-    <% end %>
+  <div class="main">
+    <div class="contents">
+      <% @items.each do |item| %>
+        <%= link_to (image_tag "#{item.image}"), item_path(item.id), class: "content-image" %>
+      <% end %>
+    </div>
+    <%= will_paginate @item %>
   </div>
-  <%= will_paginate @item %>
-</div>
 
-<%= render "footer" %>
+  <%= render "footer" %>
 </div>
